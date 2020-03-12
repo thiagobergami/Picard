@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56.765" height="56.05" viewBox="0 0 56.765 56.05">
+  <g id="Historiador_01" data-name="Historiador 01" transform="translate(0)">
+    <path id="Path_433" data-name="Path 433" d="M6,24.849V1.826A1.9,1.9,0,0,1,7.826,0h36.52a1.918,1.918,0,0,1,1.826,1.905V24.929" transform="translate(-1.237)" fill="#eba43f"/>
+    <path id="Path_434" data-name="Path 434" d="M13,26.045V7.705A1.864,1.864,0,0,1,14.826,5.8h36.52a1.918,1.918,0,0,1,1.826,1.905V26.045" transform="translate(-2.679 -1.195)" fill="#77bb6b"/>
+    <path id="Path_435" data-name="Path 435" d="M33.106,22.915,27.39,28.948a1.567,1.567,0,0,1-1.111.476H2.541A2.6,2.6,0,0,0,0,32.124v25.8a2.6,2.6,0,0,0,2.541,2.7H54.224a2.6,2.6,0,0,0,2.541-2.7V24.9a2.6,2.6,0,0,0-2.541-2.7H34.694A2.631,2.631,0,0,0,33.106,22.915Z" transform="translate(0 -4.575)" fill="#232d5f"/>
+    <line id="Line_99" data-name="Line 99" x2="27.787" transform="translate(15.958 10.877)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.83"/>
+    <line id="Line_100" data-name="Line 100" x2="11.353" transform="translate(15.958 15.084)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.83"/>
+    <g id="Group_528" data-name="Group 528" transform="translate(25.924 27.353)">
+      <path id="Path_436" data-name="Path 436" d="M47.408,50.485,60.666,39.449a.9.9,0,0,1,1.27.159h0a.9.9,0,0,1-.159,1.27L48.519,51.914a.9.9,0,0,1-1.27-.159h0a.9.9,0,0,1,.159-1.27" transform="translate(-35.621 -35.442)" fill="#fff" fill-rule="evenodd"/>
+      <path id="Path_437" data-name="Path 437" d="M37.853,49.8H55.081a.965.965,0,0,1,.953.953h0a.965.965,0,0,1-.953.953H37.853a.965.965,0,0,1-.953-.953h0a.917.917,0,0,1,.953-.953" transform="translate(-33.528 -37.616)" fill="#fff" fill-rule="evenodd"/>
+      <path id="Path_438" data-name="Path 438" d="M34.2,34.649l18.5,15a.9.9,0,0,1,.159,1.27h0a.9.9,0,0,1-1.27.159l-18.578-15a.9.9,0,0,1-.159-1.27h0a1,1,0,0,1,1.35-.159" transform="translate(-32.653 -34.453)" fill="#fff"/>
+      <path id="Path_439" data-name="Path 439" d="M51.236,43.524,55.523,60.2a.9.9,0,0,1-.635,1.111h0a.9.9,0,0,1-1.111-.635L49.489,44a.9.9,0,0,1,.635-1.111h0a.9.9,0,0,1,1.111.635" transform="translate(-36.114 -36.183)" fill="#fff" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>
