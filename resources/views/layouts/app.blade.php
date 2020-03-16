@@ -47,10 +47,13 @@
         <div class="container">
             <div class="row">
                 <div class="container-titulo ml-4">
-
-                    <div class="titulo-page">
-                        <h1 class="fs-h1 text-branco h1-embaralha" id="tlt">Pic@rd</h1>
-                    </div>
+                    <section id="hero">
+                        <div class="titulo-page hero-container"  data-aos="fade-in">                            
+                            <h1 class="fs-h1 text-branco h1-embaralha" id="tlt">Bem vindo ao <span class ="typed" data-typed-items="Dados, Inteligência, Portal, Picard."></span></h1>
+                            
+                        </div>
+                    </section>
+                   
                     {{-- <div aria-label="breadcrumb">
                         <ol class="bg-transparent breadcrumb p-0 text-branco">
                             <li class="breadcrumb-item">
@@ -83,7 +86,7 @@
     <div class="container">
         @yield('content')
     </div>
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
@@ -93,43 +96,27 @@
     </script>
 
     <!-- JS Plugin Slider -->
-    <script type="text/javascript" src="slide/slick/slick.min.js"></script>
     <script src="js/pickadate/lib/picker.js"></script>
     <script src="js/pickadate/lib/picker.date.js"></script>
 
     <script src="js/index.js"></script>
     <script src="js/shuffle-text.js"></script>
+    <script src="typed.js/typed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
     <script>
-        window.addEventListener('load', init);
-    function init() {
-        let one = ['Pic@rd', 'Catálogo de Dados - Taesa'];
-        let two = 0;
-        var effectList = [];
-        var elementList = document.querySelectorAll('.h1-embaralha');
-        var tp = document.getElementById('tlt');
-
-        for (var i = 0; i < elementList.length; i++) {
-
-            var element = elementList[i];
-            element.dataset.index = i;
-
-            effectList[i] = new ShuffleText(element);
-
-            element.addEventListener('mouseenter', function () {
-            effectList[+this.dataset.index].start();
-            if(two % 2 == 0 ){
-                tp.innerHTML = one[0];
-            }else{
-                tp.innerHTML = one[1];
-            }
-            two++
-            
-            });        
-            effectList[i].start();
-            
-        }
+        "use strict";
+        var typed_strings = $(".typed").data('typed-items');
+        typed_strings = typed_strings.split(',')
+        new Typed('.typed', {
+            strings: typed_strings,
+            loop: false,
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 2000
+        });
         
-    }
     </script>
 </body>
 
