@@ -3,8 +3,27 @@ body{
 }
 .head{
     background-color: #FFFFFF;
-    border-radius: 5% ;
+    border-radius: 5px ;
 }
 .text-menu{
     color: #6A6E73 !important;
+}
+.c1{
+    background-color: #05286A !important;
+    opacity: 0.8 !important;
+}
+.c2{
+    background-color:#F7A30F !important;
+    opacity: 0.8 !important;
+}
+.c3{
+    background-color:#259821 !important;
+    opacity: 0.8 !important;
+}
+.c4{
+    background-color:#EF6B01 !important;
+    opacity: 0.8 !important;
+}
+.letter{
+    color: #FFF !important;
 }
