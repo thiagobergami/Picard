@@ -9,47 +9,39 @@
 @endsection
 
 @section('content')
-<div class="row">
-    <div class="col-12 col-md-12 mt-5 pos-f-t">
-        <div class="collapse" id="navbarToggleExternalContent">
-            <h4></h4>
-            <p class="paragrafo text-justificado text-texto-principal-2">Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Nulla rhoncus mauris commodo efficitur facilisis. Sed ut diam purus. Mauris neque eros,
-                sodales a placerat in, rutrum sed nulla. lorem, auctor non lectus nec, fermentum laoreet eros. Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus mauris commodo efficitur facilisis. Sed
-                ut diam purus. Mauris neque eros, sodales a placerat in, rutrum sed nulla. lorem, auctor non lectus nec,
-                fermentum laoreet eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus mauris
-                commodo efficitur facilisis. Sed ut diam purus. Mauris neque eros, sodales a placerat in, rutrum sed
-                nulla. lorem, auctor non lectus nec, fermentum laoreet eros. </p>
-        </div>
-        <div>
-            <nav class="navbar navbar-light">
-                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                  Portal de Inteligência para consulta e acesso à rede de Dados - Taesa
-                </button>
-              </nav>  
-        </div>
-                  
-    </div>
-    <!-- accordion com icone -->
-
-    <div class="col-12 col-md-12 mt-5">
-        <nav class="navbar navbar-light bg-light">
-            <form class="form-inline">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+<div class="doc-content col-md-9 col-12 order-1">
+  <div class="content-inner">
+    
+  </div>
+</div>    
+<div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+  <div id="doc-nav" class="doc-nav">
+    <!--Criar aqui um foreach para expor as áreas de interesse e suas análises -->
+      <nav id="doc-menu" class="nav doc-menu flex-column sticky head">
+        <a href="#" class="nav-link scrollto text-left text-menu">Gestão de Ativos</a>
+          <nav class="doc-sub-menu nav flex-column">
+            <a href="#" class="nav-link scrollto ml-5 text-menu">Vida últil dos Ativos</a>
+            <a href="#" class="nav-link scrollto ml-5 text-menu">Parcela Variável</a>
+            <a href="#" class="nav-link scrollto ml-5 text-menu">Capex - DTO</a>
+            <a href="#" class="nav-link scrollto ml-5 text-menu">Demandas - PLR</a>
+            <a href="#" class="nav-link scrollto ml-5 text-menu">Análise de Contratos</a>
           </nav>
-
-    </div>
-    <div class="col-4">
-      <nav class="nav flex-column">
-        <a class="nav-link active" href="#">Active</a>
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link" href="#">Link</a>
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <a href="#" class="nav-link scrollto text-left text-menu">Engenharia de O&M</a>
+          <nav class="doc-sub-menu nav flex-column">
+            <a href="#" class="nav-link scrollto ml-5 text-menu">Canais de Telecom</a>
+            <a href="#" class="nav-link scrollto ml-5 text-menu">Horas em projetos - GOM</a>
+            <a href="#" class="nav-link scrollto ml-5 text-menu">Realização de OPEX</a>
+            <a href="#" class="nav-link scrollto ml-5 text-menu">Capex - GOM</a>
+            <a href="#" class="nav-link scrollto ml-5 text-menu">Relatório de Manutenção - Linha</a>
+            <a href="#" class="nav-link scrollto ml-5 text-menu">Análise de Óleo</a>
+            <a href="#" class="nav-link scrollto ml-5 text-menu">Análise de Óleo - Reatores</a>
+          </nav>
+          <a href="#" class="nav-link scrollto text-left text-menu">Reforços e Melhorias</a>
+          <nav class="doc-sub-menu nav flex-column">
+            <a href="#" class="nav-link scrollto ml-5 text-menu">Execução Financeira - Projetos</a>
+            <a href="#" class="nav-link scrollto ml-5 text-menu">Execução Física - Projetos</a>
+          </nav>
       </nav>
     </div>
-    
 </div>
 @endsection

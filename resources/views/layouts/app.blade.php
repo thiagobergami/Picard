@@ -3,15 +3,17 @@
 <html>
 
 <head>
-    <title>Pic@rd - @yield('title')</title>
+    <title>PICARD - @yield('title')</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="shortcut icon" href="img/gd.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/picard.css">
 
     <link rel="stylesheet" href="font-taesa/style.css">
 
@@ -19,73 +21,41 @@
     <link rel="stylesheet" href="js/pickadate/lib/themes/classic.css">
     <link rel="stylesheet" href="js/pickadate/lib/themes/classic.date.css">
 </head>
-
-<body>
-    <div class="d-flex">
-        <div class="container mt-4">
-            <nav class="ml-xl-n2 navbar navbar-expand-lg navbar-light p-0">
-                <a href="index.html">
-
-                    <img src="img/logo-taesa.png" class="img-fluid ml-md-0 mr-lg-5" alt="Taesa">
-                </a>
-                <button class="mt-4 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu1"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse ml-lg-8 mt-3 navbar-collapse" id="navbarMenu1">
-                    <ul class="font-weight-bold nav nav-pills text-cor-texto-menu navbar-nav mr-auto">
-                    </ul>
-                    <div class="btn btn-azul-5 cor-azul-hover text-branco fs-16 px-4 py-2  mt-lg-2 mt-2">
-                        <span><i class="ft-edit"></i>Login</span>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <div class="banner mt-lg-5 mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="container-titulo ml-4">
-                    <section id="hero">
-                        <div class="titulo-page hero-container"  data-aos="fade-in">                            
-                            <h1 class="fs-h1 text-branco h1-embaralha" id="tlt">Bem vindo ao <span class ="typed" data-typed-items="Dados, Inteligência, Portal, Picard."></span></h1>
-                            
+<body class = "body-green">
+    <div class="page-wrapper">
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-between px-5">
+                            <div class="align-items-center d-flex">
+                                <div class="d-column d-inline-block d-none mr-3 px-3">
+                                    <a href="/">
+                                        <img alt="TAESA" src="img/logo-taesa.png" width="130px" >
+                                    </a>
+                                </div>
+                                    <h2 style="margin-top: 15px;" class="border-left border-white col-12 d-md-inline-block d-none mr-3 px-3 text-branco">Bem vindo <span class ="typed" data-typed-items="à Informação, à Inovação, à Inteligência, ao Picard."></span></h2>
+                            </div>
+                            <div class="btn btn-azul-5 cor-azul-hover text-branco fs-16 px-4 py-2  mt-lg-2 mt-2">
+                                <span><i class="ft-edit"></i>Login</span>
+                            </div>
                         </div>
-                    </section>
-                   
-                    {{-- <div aria-label="breadcrumb">
-                        <ol class="bg-transparent breadcrumb p-0 text-branco">
-                            <li class="breadcrumb-item">
-                                <a href="#">
-                                    <span class="branco">Home</span>
-                                </a>
-                            </li>
-                            <li class="breadcrumb-item">
-                                <a href="#">
-                                    <span class="branco">Onde Estamos</span>
-                                </a>
-                            </li>
-                            <li class="breadcrumb-item active" aria-current="page">
-                                <a href="#">
-                                    <span class="branco">Etao</span>
-                                </a>
-                            </li>
-                        </ol>
-                    </div> --}}
-                </div>
-            </div>
+                    </div>
+                </div><!--//branding-->
+            </div><!--//container-->
+        </header>
+        <div class="doc-wrapper">
+                @section('sidebar')
+                    @show
+                    <div class="container">
+                        <div class="doc-body row mt-5">
+                        @yield('content')
+                        </div>
+                    </div>
+                @yield('barra-lateral')
         </div>
     </div>
-    
-
-
-    @section('sidebar')
-    @show
-
-    <div class="container">
-        @yield('content')
-    </div>
+</div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
