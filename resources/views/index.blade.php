@@ -38,8 +38,54 @@
                         </div>
                         <!-- Esses elementos devem ser carregados quando forem chamados -->
                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p class="fs-16">Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh.</p>
+                            <!--Formulario será carregado com função javascript -->
+                            <div class="col-12 col-md-12 col-lg 4">
+                                <div class="form-group form-group-icon">
+                                    <label class="text-cinza-claro pt-2">Conexão</label>
+                                    <input type="text" class="form-control" readonly id="email" name="conexaoExempla" required="" autocomplete="off" value="TSASQL03/STG_CATALOGO">
+                                </div>
+                                <div class="form-group form-group-icon">
+                                    <label class="text-cinza-claro pt-2">Usuário</label>
+                                    <input type="text" class="form-control" readonly id="email" name="conexaoExempla" required="" autocomplete="off" value="user">
+                                </div>
+                                {{-- Desenvolver um botão para mostra a senha --}}
+                                <div class="form-group form-group-icon">
+                                    <label class="text-cinza-claro pt-2">Senha</label>
+                                    <input type="text" class="form-control" readonly id="email" name="conexaoExempla" required="" autocomplete="off" value="password">
+                                </div>
+                                <div class="form-group form-group-icon">
+                                    <label class="text-cinza-claro pt-2">Descrição da fonte</label>
+                                    <div class="border rounded">
+                                        <div class="p-3">
+                                            <p class="descritivo" readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus mauris commodo efficitur facilisis. Sed ut diam purus. Mauris neque eros, sodales a placerat in, rutrum sed nulla. lorem, auctor non lectus nec, fermentum </p>
+                                        </div>
+
+                                    </div>
+                                    </label>
+                                </div>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">campo</th>
+                                            <th scope="col">Descrição</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">ID_EQUIPAMENTO</th>
+                                            <td>Identificador único do equipamento. Tipo número(Int).</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">DT_ENTRADA</th>
+                                            <td>Data da entrada em operação do Equipamento. Tipo Data(Date).</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">DT_SAIDA</th>
+                                            <td>Data da saída de operação do Equipamento. Tipo Data(Date).</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
                             </div>
                         </div>
                     </div>
@@ -84,7 +130,7 @@
                         </div>
 
 
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
                             <div class="card-body">
                                 <p class="fs-16">Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh.</p>
                             </div>
@@ -99,7 +145,7 @@
                             </h5>
                         </div>
 
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                             <div class="card-body">
                                 <p class="fs-16">Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh.</p>
                             </div>
@@ -121,7 +167,7 @@
                             </h5>
                         </div>
                         <!-- Esses elementos devem ser carregados quando forem chamados -->
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div id="collapseOneOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                             <div class="card-body">
                                 <p class="fs-16">Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh.</p>
                             </div>
@@ -136,7 +182,7 @@
                             </h5>
                         </div>
 
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div id="collapseTwoTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                             <div class="card-body">
                                 <p class="fs-16">Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh.</p>
                             </div>
@@ -152,7 +198,7 @@
                         </div>
 
 
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div id="collapseThreeThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                             <div class="card-body">
                                 <p class="fs-16">Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh.</p>
                             </div>
@@ -168,7 +214,7 @@
                         </div>
 
 
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div id="collapseFourFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                             <div class="card-body">
                                 <p class="fs-16">Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh.</p>
                             </div>
@@ -183,7 +229,7 @@
                             </h5>
                         </div>
 
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div id="collapseFiveFive" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                             <div class="card-body">
                                 <p class="fs-16">Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh.</p>
                             </div>
@@ -198,7 +244,7 @@
                             </h5>
                         </div>
 
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div id="collapseSixSix" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                             <div class="card-body">
                                 <p class="fs-16">Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh.</p>
                             </div>
@@ -213,7 +259,7 @@
                             </h5>
                         </div>
 
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div id="collapseSevenSeven" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                             <div class="card-body">
                                 <p class="fs-16">Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh.</p>
                             </div>
